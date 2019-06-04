@@ -1,0 +1,50 @@
+
+
+.container{
+    margin: 50px;
+    display: flex;
+    height: 210px;
+    width: 501px;
+    background-color: white;
+
+}
+.big{
+    
+    display: flex;
+    flex-wrap: wrap;
+    height: 210px;
+    width: 217px;
+    background-color: white;
+}
+.small{
+    display: flex;
+    flex-wrap: wrap;
+    height: 210px;
+    width: 300px; 
+    background-color:white;
+}
+.bg{
+    margin-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100px;
+    background-color:rgb(19, 79, 92);
+    align-items: flex-end;
+    color:white;
+}
+.sm{
+    margin-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 80px;
+    height: 65px;
+    background-color: rgb(19, 79, 92);
+    align-items: flex-end;
+    color:white;
+}
+span{
+    margin: 5px;
+
+}

@@ -1,0 +1,73 @@
+body{
+
+}
+header{
+    background-color: rgb(177, 208, 176);
+    position: relative;
+
+}
+header h3{
+background-color: rgb(104, 190, 101)
+}
+section{
+    display: inline-block;
+ width: 70%;
+ height: 450px;
+}
+.sidebar{
+    height: 450px;
+    width: 30%;
+    background-color: rgb(89, 146, 215);
+    float: left;
+}
+.content{
+    
+    height: 450px;
+    width: 70%;
+    background-color: rgb(150, 180, 218);
+    
+}
+aside{
+
+    height: 450px;
+    width: 30%;
+    background-color: rgb(89, 146, 215);
+    float: right; 
+}
+footer{
+    height: 100px;
+    background-color:  rgb(177, 208, 176);
+}
+p{  padding-left: 20px;
+    padding-bottom:  10px;
+    margin: 0%;
+    font-family: sans-serif;
+    color: white;
+}
+h1{
+    padding: 10px;
+    margin: 0%;
+    font-family: sans-serif;
+    color: white;
+}
+h3{
+    padding: 10px;
+    margin: 0%;
+    font-family: sans-serif;
+    color: white;
+}
+h4{
+    font-family: sans-serif;
+    padding-left: 10px;
+    margin-bottom: 0;
+    color: white;
+}
+a{
+    padding-right: 10px;
+    padding-left: 20px;
+    font-family: sans-serif;
+    color: white;
+}
+ul li{
+    color: white;
+}

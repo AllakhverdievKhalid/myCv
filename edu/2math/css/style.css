@@ -1,0 +1,13 @@
+p{
+            
+    font-size: 30px;
+    color: black;
+}
+p sub{
+    font-size: 15px;
+    color: blueviolet;
+}
+p sup{
+    font-size: 15px;
+    color:red;
+}

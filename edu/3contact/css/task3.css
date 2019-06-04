@@ -1,0 +1,42 @@
+body{
+   
+    
+    text-align: center;
+    background-color: rgba(248, 248, 96, 0.788);
+}
+p input{
+    text-align: center;
+    size: 50px;  
+}
+h1{
+    
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center; 
+    background-color: yellow;
+
+}
+h2{
+margin: 0;
+padding: 0; 
+}
+button{
+background-color: yellowgreen;
+margin: 1%;
+height: 40px;
+font-size: 30px;
+border-radius: 50px;
+}
+select{
+    margin: 1%;
+
+
+}
+
+.btn1 :hover{
+    background-color:  yellow;
+}
+
+
+

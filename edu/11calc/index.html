@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <style>
+    .container{
+      margin: 5vh;
+      border: 2px solid rgb(204, 204, 204);
+    }
+    .navs{
+        
+        font-family: sans-serif;
+        font-size: 12px;
+        height:100%;
+      
+    }
+    .display{
+        font-family: sans-serif;
+        height: 100px;
+
+    }
+    .first-row{
+        font-family: sans-serif;
+        padding: 0;
+        margin: 0;
+        border-bottom: 2px solid rgb(173, 169, 169);  
+        height: 5%;
+    }
+    .buttons-result{
+        padding-bottom: 10px;
+        padding-top:10px;
+        font-size: 20px;
+        height: 10%;
+        background-color: rgb(228, 227, 227);
+    }
+    
+    .buttons-gray{
+        font-family: sans-serif;
+        padding-bottom: 10px;
+        padding-top:10px;
+        font-size: 20px;  
+        background-color: rgb(228, 227, 227);
+       
+    }
+   
+    .btn-block:hover{
+        background-color: white;
+    }
+    .container{
+      width: 80%;
+    }
+    .form-control-plaintext{
+        font-size: 40px;
+        direction:RTL;
+       
+    }
+    .btn-block{
+        font-family: sans-serif;
+       
+        height: 50px;
+    }
+    .navbar-toggler-icon{
+        font-size: 18px;
+        
+    }
+  .formResult{
+    height: 30vh
+  }
+
+   </style>
+
+
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+         
+          <div class="col-lg-8 col-sm-8 form-input">
+          <div class="row">
+          <div class="col-lg-12 col-sm-12 navs">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-0 py-1">
+                <button class="navbar-toggler px-0 py-0" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <a class="navbar-brand" href="#"><i class="fas fa-crow"></i></a>
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Default<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Engineering</a>
+                          </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Programming</a>
+                    </li>
+                  </ul>
+                 
+                </div>
+              </nav>
+          </div>
+
+          </div>
+        <!-- navss -->
+        <form name="Keypad" action="">
+         <div class="row">
+            <div class="col-lg-12 col-sm-12 display">
+               
+                 <input class="form-control-plaintext" name="ReadOut" type="text" placeholder="" value="0" size="12" id="display" name="calcdisp" readonly>
+
+              
+               
+            </div>
+         </div>
+        <!-- display -->
+        
+        <div class="row px-0">
+        <div class="col-2 first-row px-0"><input type="button" value="MC" class="btn-block border-0" disabled></div>
+        <div class="col-2 first-row px-0"><input type="button" value="MR" class="btn-block border-0" disabled></div>
+        <div class="col-2 first-row px-0"><input type="button" value="M +" class="btn-block border-0" disabled></div>
+        <div class="col-2 first-row px-0"><input type="button" value="M -" class="btn-block border-0" disabled></div>
+        <div class="col-2 first-row px-0"><input type="button" value="sin" class="btn-block border-0" disabled></div>
+        <div class="col-2 first-row px-0"><input type="button" value="cos" class="btn-block border-0" disabled></div>
+        </div> 
+        <!-- m buttons -->
+        <div class="row">
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="Clear"    value="CE"      onclick="ClearAll(Accumulate)" class="btn-block border-0" ></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="root"     value="&radic;" onclick="Operation('*')"               class="btn-block border-0" ></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="percent"  value="%"       onclick="Percent ('%')"                     class="btn-block border-0" ></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="multipli" value="&#215;"  onclick="Operation('*')"       class="btn-block border-0" ></div>
+           </div>
+        <div class="row">
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="seven"    value="7"       onclick="NumPressed(7)"  class="btn-block border-0" ></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="eight"    value="8"       onclick="NumPressed(8)"  class="btn-block border-0" ></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="nine"     value="9"       onclick="NumPressed(9)"  class="btn-block border-0" ></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="division" value="&divide;"onclick="Operation('/')" class="btn-block border-0" ></div>
+            </div>
+        <div class="row">
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="four"     value="4"       onclick="NumPressed(4)"  class="btn-block border-0" ></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="five"     value="5"       onclick="NumPressed(5)"  class="btn-block border-0" ></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="six"      value="6"       onclick="NumPressed(6)"  class="btn-block border-0" ></sup></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="minus"    value="-"       onclick="Operation('-')" class="btn-block border-0" ></div>
+        
+        
+            </div>   
+        <div class="row">
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="one"      value="1"      onclick="NumPressed(1)"   class="btn-block border-0" ></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="two"      value="2"      onclick="NumPressed(2)"   class="btn-block border-0" ></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="three"    value="3"      onclick="NumPressed(3)"   class="btn-block border-0" ></sup></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="plus"     value="+"      onclick="Operation('+')"  class="btn-block border-0" ></div>
+            
+            
+            </div>
+        <div class="row">
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="plusminus" value="&#177;" onclick="Neg()"          class="btn-block border-0" ></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="zero"      value="0"      onclick="NumPressed(0)"  class="btn-block border-0" ></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="coma"      value=","      onclick="Decimal()"      class="btn-block border-0" ></sup></div>
+            <div class="col-3 buttons-gray d-flex justify-content-center px-0 py-0"><input type="button" id="done"      value="="      onclick="Operation('=')" class="btn-block border-0" ></div>
+                
+                
+            </div> 
+       </form>         
+        <!-- calc body -->
+          </div>
+        <!-- section1 -->
+                        <div class="col-lg-4 col-sm-4 form-result">
+                
+                        <label class="py-2">
+                                 <button type="button" class="btn btn-light bg-white">History</button> 
+                                 <button type="button" class="btn btn-light bg-white">Jornal</button>  
+                        </label>
+                               
+                        <form>
+                            <input class="form-control-plaintext formResult"  type="text" placeholder="" value="" id="display" name="calcResult" readonly>
+                           </form>
+                          
+                       
+                      </div>
+          </div>
+          <!-- sidebar -->
+        </div>
+      </div>
+      <script>
+        var FKeyPad = document.Keypad;
+        var Accumulate = 0;
+        var FlagNewNum = false;
+        var PendingOp = "";
+        function NumPressed (Num) {
+            if (FlagNewNum) {
+                FKeyPad.ReadOut.value  = Num;
+                FlagNewNum = false;
+            }
+            else {
+                if (FKeyPad.ReadOut.value == "0")
+                    FKeyPad.ReadOut.value = Num;
+                else
+                    FKeyPad.ReadOut.value += Num;
+            }
+        }
+        function Operation (Op) {
+            var Readout = FKeyPad.ReadOut.value;
+            if (FlagNewNum && PendingOp != "=");
+            else
+            {
+                FlagNewNum = true;
+                if ( '+' == PendingOp )
+                    Accumulate += parseFloat(Readout);
+                else if ( '-' == PendingOp )
+                    Accumulate -= parseFloat(Readout);
+                else if ( '/' == PendingOp )
+                    Accumulate /= parseFloat(Readout);
+                else if ( '*' == PendingOp )
+                    Accumulate *= parseFloat(Readout);
+                else
+                    Accumulate = parseFloat(Readout);
+                FKeyPad.ReadOut.value = Accumulate;
+                PendingOp = Op;
+            }
+        }
+        function Decimal () {
+            var curReadOut = FKeyPad.ReadOut.value;
+            if (FlagNewNum) {
+                curReadOut = "0.";
+                FlagNewNum = false;
+            }
+            else
+            {
+                if (curReadOut.indexOf(".") == -1)
+                    curReadOut += ".";
+            }
+            FKeyPad.ReadOut.value = curReadOut;
+        }
+        function ClearEntry () {
+            FKeyPad.ReadOut.value = "0";
+            FlagNewNum = true;
+        }
+        function ClearAll () {
+            Accumulate = 0;
+            PendingOp = " ";
+            ClearEntry();
+        }
+        function Neg () {
+            FKeyPad.ReadOut.value = parseFloat(FKeyPad.ReadOut.value) * -1;
+        }
+        function Percent () {
+            FKeyPad.ReadOut.value = (parseFloat(FKeyPad.ReadOut.value) / 100) * parseFloat(Accumulate);
+        }
+    </script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+body{
+    margin-top: 10px;
+   margin-left: 10px;
+   padding: 0;
+   
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    margin-left: 0%;
+}
+.section-body{
+    
+    
+    border-right: 1px solid white;
+}
+
+
+.avatar{
+   height: 325px;
+
+   
+
+   
+}
+.section-name{
+    font-family: 'Source Serif Pro', serif;
+   
+ 
+}
+.prof{
+    margin-bottom: 25px;
+}
+.contact{
+    color: rgb(71, 126, 204);
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-family: 'Source Serif Pro', serif;
+}
+.contact{
+    margin: 10px 10px 0px 0px; 
+}
+
+.contact a{
+    font-size: 14px; 
+    margin-left: 10px; 
+}
+.technology{
+font-size: 50px;
+}
+.technology i{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.section-name p{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 14px; 
+}
+.education{
+    font-family: 'Source Serif Pro', serif;
+    padding-left: 30px;
+    margin-top: 25px;
+    border-top: 2px solid rgb(180, 176, 176);
+   
+}
+.info{
+  font-family: 'Source Serif Pro', serif;
+  font-size: 14px;   
+}
+.section-footer{
+   margin-top: 10px;
+   height: 100px;
+   
+}
+.star{
+margin: 0;  
+color: orange;
+font-size: 20px;
+}
+.skills{
+ margin: 0;  
+font-size: 18px;
+}
+.skill-info{
+   font-size: 14px; 
+   font-family: 'Source Serif Pro', serif; 
+   margin-bottom: 15px;
+   margin-top: 5px;
+}
+
+.header-skills{
+   font-family: 'Source Serif Pro', serif;
+   margin-bottom: 10px;
+   color: rgb(71, 126, 204);
+}
+.section-title{
+color: rgb(71, 126, 204);
+margin-top: 5px;
+}
+.section-year{
+color: rgb(71, 126, 204);
+margin-top: 5px; 
+}
+.section-sidebar{
+   width: 100px;
+}
+.info span{
+   margin-right: 5px;
+}
+#icon{
+   margin-bottom: 5px;
+   font-size: 25px;
+}
