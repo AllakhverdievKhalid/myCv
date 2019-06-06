@@ -111,3 +111,8 @@ margin-top: 5px;
    margin-bottom: 5px;
    font-size: 25px;
 }
+@media screen and (min-width: 900px){
+    .container{
+        margin: 20px;
+    }
+}
